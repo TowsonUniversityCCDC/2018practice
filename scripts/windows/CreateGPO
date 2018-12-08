@@ -1,0 +1,7 @@
+get-gpo -all
+get-gpo -all |format-list -property displayname
+get-command -module grouppolicy -verb new 
+get-help new-gpo -examples
+cls
+new-gpo -name "InsertName - DescriptionOfGPOHere"
+get-gpo -name "InsertName - DescriptionOfGPOHere"|format-list * 
